@@ -1,181 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.11.9 on win32)" generated="2025-09-15T21:25:50.142192" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.11.9 on win32)" generated="2026-01-02T21:25:50.142192" rpa="false" schemaversion="5">
 <suite id="s1" name="Event Registration Fail" source="D:\SQA\Lab10\Starterfiles\Starterfiles\Test\Login_fail\event_registration_fail.robot">
 <test id="s1-t1" name="Event Registration Validation Scenario" line="16">
 <kw name="Test Empty First Name">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:50.289417" level="INFO">=== Test Case 1: Empty First Name ===</msg>
+<msg time="2026-01-02T21:25:50.289417" level="INFO">=== Test Case 1: Empty First Name ===</msg>
 <arg>=== Test Case 1: Empty First Name ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:50.289417" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:50.289417" elapsed="0.000000"/>
 </kw>
 <kw name="Open Registration Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:50.290413" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Registration.html'.</msg>
+<msg time="2026-01-02T21:25:50.290413" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Lab4/Registration.html'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-15T21:25:50.289417" elapsed="1.392985"/>
+<status status="PASS" start="2026-01-02T21:25:50.289417" elapsed="1.392985"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.682402" elapsed="0.023372"/>
+<status status="PASS" start="2026-01-02T21:25:51.682402" elapsed="0.023372"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Event Registration</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.705774" elapsed="0.009509"/>
+<status status="PASS" start="2026-01-02T21:25:51.705774" elapsed="0.009509"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:25:50.289417" elapsed="1.425866"/>
+<status status="PASS" start="2026-01-02T21:25:50.289417" elapsed="1.425866"/>
 </kw>
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>name=firstname</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.715283" elapsed="0.025766"/>
+<status status="PASS" start="2026-01-02T21:25:51.715283" elapsed="0.025766"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:51.741049" level="INFO">Typing text 'Sodsai' into text field 'name=lastname'.</msg>
+<msg time="2026-01-02T21:25:51.741049" level="INFO">Typing text 'Sodsai' into text field 'name=lastname'.</msg>
 <arg>name=lastname</arg>
 <arg>${LAST_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.741049" elapsed="0.050938"/>
+<status status="PASS" start="2026-01-02T21:25:51.741049" elapsed="0.050938"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:51.791987" level="INFO">Typing text 'CS KKU' into text field 'name=organization'.</msg>
+<msg time="2026-01-02T21:25:51.791987" level="INFO">Typing text 'CS KKU' into text field 'name=organization'.</msg>
 <arg>name=organization</arg>
 <arg>${ORGANIZATION}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.791987" elapsed="0.043307"/>
+<status status="PASS" start="2026-01-02T21:25:51.791987" elapsed="0.043307"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:51.835294" level="INFO">Typing text 'somsri@kkumail.com' into text field 'name=email'.</msg>
+<msg time="2026-01-02T21:25:51.835294" level="INFO">Typing text 'Somyod@kkumail.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.835294" elapsed="0.058416"/>
+<status status="PASS" start="2026-01-02T21:25:51.835294" elapsed="0.058416"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:51.893710" level="INFO">Typing text '081-001-1234' into text field 'name=phone'.</msg>
+<msg time="2026-01-02T21:25:51.893710" level="INFO">Typing text '091-001-1234' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>${PHONE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.893710" elapsed="0.047473"/>
+<status status="PASS" start="2026-01-02T21:25:51.893710" elapsed="0.047473"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:51.941183" level="INFO">Clicking button 'Register'.</msg>
+<msg time="2026-01-02T21:25:51.941183" level="INFO">Clicking button 'Register'.</msg>
 <arg>Register</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.941183" elapsed="0.041019"/>
+<status status="PASS" start="2026-01-02T21:25:51.941183" elapsed="0.041019"/>
 </kw>
 <kw name="Generate Test Report">
 <kw name="Get Time" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.984202" level="INFO">${current_time} = 2025-09-15 21:25:51</msg>
+<msg time="2026-01-02T21:25:51.984202" level="INFO">${current_time} = 2026-01-02 21:25:51</msg>
 <var>${current_time}</var>
 <doc>Returns the given time in the requested format.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.984202" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:51.984202" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.985201" level="INFO">========== TEST CASE REPORT ==========</msg>
+<msg time="2026-01-02T21:25:51.985201" level="INFO">========== TEST CASE REPORT ==========</msg>
 <arg>========== TEST CASE REPORT ==========</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.985201" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:51.985201" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.985201" level="INFO">Test Case: Empty First Name</msg>
+<msg time="2026-01-02T21:25:51.985201" level="INFO">Test Case: Empty First Name</msg>
 <arg>Test Case: ${test_case_name}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.985201" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:51.985201" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.985201" level="INFO">URL: http://localhost:7272/Registration.html</msg>
+<msg time="2026-01-02T21:25:51.985201" level="INFO">URL: http://localhost:7272/Lab4/Registration.html</msg>
 <arg>URL: ${URL}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.985201" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:51.985201" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.985201" level="INFO">Browser: Chrome</msg>
+<msg time="2026-01-02T21:25:51.985201" level="INFO">Browser: Chrome</msg>
 <arg>Browser: ${BROWSER}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.985201" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:51.985201" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.985201" level="INFO">Timestamp: 2025-09-15 21:25:51</msg>
+<msg time="2026-01-02T21:25:51.985201" level="INFO">Timestamp: 2026-01-02 21:25:51</msg>
 <arg>Timestamp: ${current_time}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.985201" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:51.985201" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.985201" level="INFO"> </msg>
+<msg time="2026-01-02T21:25:51.985201" level="INFO"> </msg>
 <arg>${SPACE}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.985201" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:51.985201" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.985201" level="INFO">=== Form Data ===</msg>
+<msg time="2026-01-02T21:25:51.985201" level="INFO">=== Form Data ===</msg>
 <arg>=== Form Data ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.985201" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:51.985201" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.985201" level="INFO">First Name: [EMPTY]</msg>
+<msg time="2026-01-02T21:25:51.985201" level="INFO">First Name: [EMPTY]</msg>
 <arg>First Name: ${firstname}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.985201" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:51.985201" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.985201" level="INFO">Last Name: Sodsai</msg>
+<msg time="2026-01-02T21:25:51.985201" level="INFO">Last Name: Sodsai</msg>
 <arg>Last Name: ${lastname}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.985201" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:51.985201" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.985201" level="INFO">Organization: CS KKU</msg>
+<msg time="2026-01-02T21:25:51.985201" level="INFO">Organization: CS KKU</msg>
 <arg>Organization: ${organization}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.985201" elapsed="0.001512"/>
+<status status="PASS" start="2026-01-02T21:25:51.985201" elapsed="0.001512"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.986713" level="INFO">Email: somsri@kkumail.com</msg>
+<msg time="2026-01-02T21:25:51.986713" level="INFO">Email: Somyod@kkumail.com</msg>
 <arg>Email: ${email}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.986713" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:51.986713" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.986713" level="INFO">Phone: 081-001-1234</msg>
+<msg time="2026-01-02T21:25:51.986713" level="INFO">Phone: 091-001-1234</msg>
 <arg>Phone: ${phone}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.986713" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:51.986713" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.986713" level="INFO"> </msg>
+<msg time="2026-01-02T21:25:51.986713" level="INFO"> </msg>
 <arg>${SPACE}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.986713" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:51.986713" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.986713" level="INFO">=== Action ===</msg>
+<msg time="2026-01-02T21:25:51.986713" level="INFO">=== Action ===</msg>
 <arg>=== Action ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.986713" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:51.986713" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.986713" level="INFO">Action: Clicked Register Button</msg>
+<msg time="2026-01-02T21:25:51.986713" level="INFO">Action: Clicked Register Button</msg>
 <arg>Action: Clicked Register Button</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.986713" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:51.986713" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.986713" level="INFO">Status: Form Submitted</msg>
+<msg time="2026-01-02T21:25:51.986713" level="INFO">Status: Form Submitted</msg>
 <arg>Status: Form Submitted</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.986713" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:51.986713" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:51.986713" level="INFO">=====================================</msg>
+<msg time="2026-01-02T21:25:51.986713" level="INFO">=====================================</msg>
 <arg>=====================================</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.986713" elapsed="0.001015"/>
+<status status="PASS" start="2026-01-02T21:25:51.986713" elapsed="0.001015"/>
 </kw>
 <arg>Empty First Name</arg>
 <arg>${EMPTY_VALUE}</arg>
@@ -184,188 +184,188 @@
 <arg>${EMAIL}</arg>
 <arg>${PHONE}</arg>
 <doc>สร้างรายงานสำหรับแต่ละ Test Case</doc>
-<status status="PASS" start="2025-09-15T21:25:51.983204" elapsed="0.004524"/>
+<status status="PASS" start="2026-01-02T21:25:51.983204" elapsed="0.004524"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-15T21:25:51.987728" elapsed="2.091775"/>
+<status status="PASS" start="2026-01-02T21:25:51.987728" elapsed="2.091775"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:25:50.288413" elapsed="3.791090"/>
+<status status="PASS" start="2026-01-02T21:25:50.288413" elapsed="3.791090"/>
 </kw>
 <kw name="Test Empty Last Name">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:54.080610" level="INFO">=== Test Case 2: Empty Last Name ===</msg>
+<msg time="2026-01-02T21:25:54.080610" level="INFO">=== Test Case 2: Empty Last Name ===</msg>
 <arg>=== Test Case 2: Empty Last Name ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:54.079503" elapsed="0.001107"/>
+<status status="PASS" start="2026-01-02T21:25:54.079503" elapsed="0.001107"/>
 </kw>
 <kw name="Open Registration Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:54.080610" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Registration.html'.</msg>
+<msg time="2026-01-02T21:25:54.080610" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Lab4/Registration.html'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-15T21:25:54.080610" elapsed="1.388159"/>
+<status status="PASS" start="2026-01-02T21:25:54.080610" elapsed="1.388159"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.468769" elapsed="0.035922"/>
+<status status="PASS" start="2026-01-02T21:25:55.468769" elapsed="0.035922"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Event Registration</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.504691" elapsed="0.008712"/>
+<status status="PASS" start="2026-01-02T21:25:55.504691" elapsed="0.008712"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:25:54.080610" elapsed="1.432793"/>
+<status status="PASS" start="2026-01-02T21:25:54.080610" elapsed="1.432793"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:55.513403" level="INFO">Typing text 'Somsri' into text field 'name=firstname'.</msg>
+<msg time="2026-01-02T21:25:55.513403" level="INFO">Typing text 'Somyod' into text field 'name=firstname'.</msg>
 <arg>name=firstname</arg>
 <arg>${FIRST_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.513403" elapsed="0.059686"/>
+<status status="PASS" start="2026-01-02T21:25:55.513403" elapsed="0.059686"/>
 </kw>
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>name=lastname</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.573089" elapsed="0.015734"/>
+<status status="PASS" start="2026-01-02T21:25:55.573089" elapsed="0.015734"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:55.588823" level="INFO">Typing text 'CS KKU' into text field 'name=organization'.</msg>
+<msg time="2026-01-02T21:25:55.588823" level="INFO">Typing text 'CS KKU' into text field 'name=organization'.</msg>
 <arg>name=organization</arg>
 <arg>${ORGANIZATION}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.588823" elapsed="0.040529"/>
+<status status="PASS" start="2026-01-02T21:25:55.588823" elapsed="0.040529"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:55.629352" level="INFO">Typing text 'somsri@kkumail.com' into text field 'name=email'.</msg>
+<msg time="2026-01-02T21:25:55.629352" level="INFO">Typing text 'Somyod@kkumail.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.629352" elapsed="0.049132"/>
+<status status="PASS" start="2026-01-02T21:25:55.629352" elapsed="0.049132"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:55.678484" level="INFO">Typing text '081-001-1234' into text field 'name=phone'.</msg>
+<msg time="2026-01-02T21:25:55.678484" level="INFO">Typing text '091-001-1234' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>${PHONE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.678484" elapsed="0.046781"/>
+<status status="PASS" start="2026-01-02T21:25:55.678484" elapsed="0.046781"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:55.725265" level="INFO">Clicking button 'Register'.</msg>
+<msg time="2026-01-02T21:25:55.725265" level="INFO">Clicking button 'Register'.</msg>
 <arg>Register</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.725265" elapsed="0.051056"/>
+<status status="PASS" start="2026-01-02T21:25:55.725265" elapsed="0.051056"/>
 </kw>
 <kw name="Generate Test Report">
 <kw name="Get Time" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.776826" level="INFO">${current_time} = 2025-09-15 21:25:55</msg>
+<msg time="2026-01-02T21:25:55.776826" level="INFO">${current_time} = 2026-01-02 21:25:55</msg>
 <var>${current_time}</var>
 <doc>Returns the given time in the requested format.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.776826" elapsed="0.000514"/>
+<status status="PASS" start="2026-01-02T21:25:55.776826" elapsed="0.000514"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.777340" level="INFO">========== TEST CASE REPORT ==========</msg>
+<msg time="2026-01-02T21:25:55.777340" level="INFO">========== TEST CASE REPORT ==========</msg>
 <arg>========== TEST CASE REPORT ==========</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.777340" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:55.777340" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.777340" level="INFO">Test Case: Empty Last Name</msg>
+<msg time="2026-01-02T21:25:55.777340" level="INFO">Test Case: Empty Last Name</msg>
 <arg>Test Case: ${test_case_name}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.777340" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:55.777340" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.777340" level="INFO">URL: http://localhost:7272/Registration.html</msg>
+<msg time="2026-01-02T21:25:55.777340" level="INFO">URL: http://localhost:7272/Lab4/Registration.html</msg>
 <arg>URL: ${URL}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.777340" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:55.777340" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.777340" level="INFO">Browser: Chrome</msg>
+<msg time="2026-01-02T21:25:55.777340" level="INFO">Browser: Chrome</msg>
 <arg>Browser: ${BROWSER}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.777340" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:55.777340" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.777340" level="INFO">Timestamp: 2025-09-15 21:25:55</msg>
+<msg time="2026-01-02T21:25:55.777340" level="INFO">Timestamp: 2026-01-02 21:25:55</msg>
 <arg>Timestamp: ${current_time}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.777340" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:55.777340" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.777340" level="INFO"> </msg>
+<msg time="2026-01-02T21:25:55.777340" level="INFO"> </msg>
 <arg>${SPACE}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.777340" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:55.777340" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.778345" level="INFO">=== Form Data ===</msg>
+<msg time="2026-01-02T21:25:55.778345" level="INFO">=== Form Data ===</msg>
 <arg>=== Form Data ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.778345" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:55.778345" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.778345" level="INFO">First Name: Somsri</msg>
+<msg time="2026-01-02T21:25:55.778345" level="INFO">First Name: Somyod</msg>
 <arg>First Name: ${firstname}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.778345" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:55.778345" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.778345" level="INFO">Last Name: [EMPTY]</msg>
+<msg time="2026-01-02T21:25:55.778345" level="INFO">Last Name: [EMPTY]</msg>
 <arg>Last Name: ${lastname}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.778345" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:55.778345" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.778848" level="INFO">Organization: CS KKU</msg>
+<msg time="2026-01-02T21:25:55.778848" level="INFO">Organization: CS KKU</msg>
 <arg>Organization: ${organization}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.778345" elapsed="0.000503"/>
+<status status="PASS" start="2026-01-02T21:25:55.778345" elapsed="0.000503"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.779352" level="INFO">Email: somsri@kkumail.com</msg>
+<msg time="2026-01-02T21:25:55.779352" level="INFO">Email: Somyod@kkumail.com</msg>
 <arg>Email: ${email}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.778848" elapsed="0.000504"/>
+<status status="PASS" start="2026-01-02T21:25:55.778848" elapsed="0.000504"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.779352" level="INFO">Phone: 081-001-1234</msg>
+<msg time="2026-01-02T21:25:55.779352" level="INFO">Phone: 091-001-1234</msg>
 <arg>Phone: ${phone}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.779352" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:55.779352" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.779352" level="INFO"> </msg>
+<msg time="2026-01-02T21:25:55.779352" level="INFO"> </msg>
 <arg>${SPACE}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.779352" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:55.779352" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.779352" level="INFO">=== Action ===</msg>
+<msg time="2026-01-02T21:25:55.779352" level="INFO">=== Action ===</msg>
 <arg>=== Action ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.779352" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:55.779352" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.779352" level="INFO">Action: Clicked Register Button</msg>
+<msg time="2026-01-02T21:25:55.779352" level="INFO">Action: Clicked Register Button</msg>
 <arg>Action: Clicked Register Button</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.779352" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:55.779352" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.779352" level="INFO">Status: Form Submitted</msg>
+<msg time="2026-01-02T21:25:55.779352" level="INFO">Status: Form Submitted</msg>
 <arg>Status: Form Submitted</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.779352" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:55.779352" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:55.779352" level="INFO">=====================================</msg>
+<msg time="2026-01-02T21:25:55.779352" level="INFO">=====================================</msg>
 <arg>=====================================</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.779352" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:55.779352" elapsed="0.000000"/>
 </kw>
 <arg>Empty Last Name</arg>
 <arg>${FIRST_NAME}</arg>
@@ -374,186 +374,186 @@
 <arg>${EMAIL}</arg>
 <arg>${PHONE}</arg>
 <doc>สร้างรายงานสำหรับแต่ละ Test Case</doc>
-<status status="PASS" start="2025-09-15T21:25:55.776321" elapsed="0.003031"/>
+<status status="PASS" start="2026-01-02T21:25:55.776321" elapsed="0.003031"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-15T21:25:55.780357" elapsed="2.094884"/>
+<status status="PASS" start="2026-01-02T21:25:55.780357" elapsed="2.094884"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:25:54.079503" elapsed="3.797252"/>
+<status status="PASS" start="2026-01-02T21:25:54.079503" elapsed="3.797252"/>
 </kw>
 <kw name="Test Empty First Name and Last Name">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:57.878768" level="INFO">=== Test Case 3: Empty First Name and Last Name ===</msg>
+<msg time="2026-01-02T21:25:57.878768" level="INFO">=== Test Case 3: Empty First Name and Last Name ===</msg>
 <arg>=== Test Case 3: Empty First Name and Last Name ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:57.878768" elapsed="0.001010"/>
+<status status="PASS" start="2026-01-02T21:25:57.878768" elapsed="0.001010"/>
 </kw>
 <kw name="Open Registration Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:57.880786" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Registration.html'.</msg>
+<msg time="2026-01-02T21:25:57.880786" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Lab4/Registration.html'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-15T21:25:57.880786" elapsed="1.401458"/>
+<status status="PASS" start="2026-01-02T21:25:57.880786" elapsed="1.401458"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.282244" elapsed="0.028076"/>
+<status status="PASS" start="2026-01-02T21:25:59.282244" elapsed="0.028076"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Event Registration</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.310320" elapsed="0.011520"/>
+<status status="PASS" start="2026-01-02T21:25:59.310320" elapsed="0.011520"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:25:57.879778" elapsed="1.442062"/>
+<status status="PASS" start="2026-01-02T21:25:57.879778" elapsed="1.442062"/>
 </kw>
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>name=firstname</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.321840" elapsed="0.025031"/>
+<status status="PASS" start="2026-01-02T21:25:59.321840" elapsed="0.025031"/>
 </kw>
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>name=lastname</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.346871" elapsed="0.016359"/>
+<status status="PASS" start="2026-01-02T21:25:59.346871" elapsed="0.016359"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:59.363230" level="INFO">Typing text 'CS KKU' into text field 'name=organization'.</msg>
+<msg time="2026-01-02T21:25:59.363230" level="INFO">Typing text 'CS KKU' into text field 'name=organization'.</msg>
 <arg>name=organization</arg>
 <arg>${ORGANIZATION}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.363230" elapsed="0.049132"/>
+<status status="PASS" start="2026-01-02T21:25:59.363230" elapsed="0.049132"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:59.412362" level="INFO">Typing text 'somsri@kkumail.com' into text field 'name=email'.</msg>
+<msg time="2026-01-02T21:25:59.412362" level="INFO">Typing text 'Somyod@kkumail.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.412362" elapsed="0.050360"/>
+<status status="PASS" start="2026-01-02T21:25:59.412362" elapsed="0.050360"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:59.463724" level="INFO">Typing text '081-001-1234' into text field 'name=phone'.</msg>
+<msg time="2026-01-02T21:25:59.463724" level="INFO">Typing text '091-001-1234' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>${PHONE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.462722" elapsed="0.048883"/>
+<status status="PASS" start="2026-01-02T21:25:59.462722" elapsed="0.048883"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:25:59.511605" level="INFO">Clicking button 'Register'.</msg>
+<msg time="2026-01-02T21:25:59.511605" level="INFO">Clicking button 'Register'.</msg>
 <arg>Register</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.511605" elapsed="0.041558"/>
+<status status="PASS" start="2026-01-02T21:25:59.511605" elapsed="0.041558"/>
 </kw>
 <kw name="Generate Test Report">
 <kw name="Get Time" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.553163" level="INFO">${current_time} = 2025-09-15 21:25:59</msg>
+<msg time="2026-01-02T21:25:59.553163" level="INFO">${current_time} = 2026-01-02 21:25:59</msg>
 <var>${current_time}</var>
 <doc>Returns the given time in the requested format.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.553163" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:59.553163" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.554164" level="INFO">========== TEST CASE REPORT ==========</msg>
+<msg time="2026-01-02T21:25:59.554164" level="INFO">========== TEST CASE REPORT ==========</msg>
 <arg>========== TEST CASE REPORT ==========</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.553163" elapsed="0.001001"/>
+<status status="PASS" start="2026-01-02T21:25:59.553163" elapsed="0.001001"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.554164" level="INFO">Test Case: Empty First Name and Last Name</msg>
+<msg time="2026-01-02T21:25:59.554164" level="INFO">Test Case: Empty First Name and Last Name</msg>
 <arg>Test Case: ${test_case_name}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.554164" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:59.554164" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.554164" level="INFO">URL: http://localhost:7272/Registration.html</msg>
+<msg time="2026-01-02T21:25:59.554164" level="INFO">URL: http://localhost:7272/Lab4/Registration.html</msg>
 <arg>URL: ${URL}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.554164" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:59.554164" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.554164" level="INFO">Browser: Chrome</msg>
+<msg time="2026-01-02T21:25:59.554164" level="INFO">Browser: Chrome</msg>
 <arg>Browser: ${BROWSER}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.554164" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:59.554164" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.554164" level="INFO">Timestamp: 2025-09-15 21:25:59</msg>
+<msg time="2026-01-02T21:25:59.554164" level="INFO">Timestamp: 2026-01-02 21:25:59</msg>
 <arg>Timestamp: ${current_time}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.554164" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:59.554164" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.554164" level="INFO"> </msg>
+<msg time="2026-01-02T21:25:59.554164" level="INFO"> </msg>
 <arg>${SPACE}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.554164" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:59.554164" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.555164" level="INFO">=== Form Data ===</msg>
+<msg time="2026-01-02T21:25:59.555164" level="INFO">=== Form Data ===</msg>
 <arg>=== Form Data ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.554164" elapsed="0.001000"/>
+<status status="PASS" start="2026-01-02T21:25:59.554164" elapsed="0.001000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.555164" level="INFO">First Name: [EMPTY]</msg>
+<msg time="2026-01-02T21:25:59.555164" level="INFO">First Name: [EMPTY]</msg>
 <arg>First Name: ${firstname}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.555164" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:59.555164" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.555164" level="INFO">Last Name: [EMPTY]</msg>
+<msg time="2026-01-02T21:25:59.555164" level="INFO">Last Name: [EMPTY]</msg>
 <arg>Last Name: ${lastname}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.555164" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:59.555164" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.555164" level="INFO">Organization: CS KKU</msg>
+<msg time="2026-01-02T21:25:59.555164" level="INFO">Organization: CS KKU</msg>
 <arg>Organization: ${organization}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.555164" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:59.555164" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.555164" level="INFO">Email: somsri@kkumail.com</msg>
+<msg time="2026-01-02T21:25:59.555164" level="INFO">Email: Somyod@kkumail.com</msg>
 <arg>Email: ${email}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.555164" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:59.555164" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.555164" level="INFO">Phone: 081-001-1234</msg>
+<msg time="2026-01-02T21:25:59.555164" level="INFO">Phone: 091-001-1234</msg>
 <arg>Phone: ${phone}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.555164" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:59.555164" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.555164" level="INFO"> </msg>
+<msg time="2026-01-02T21:25:59.555164" level="INFO"> </msg>
 <arg>${SPACE}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.555164" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:59.555164" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.555164" level="INFO">=== Action ===</msg>
+<msg time="2026-01-02T21:25:59.555164" level="INFO">=== Action ===</msg>
 <arg>=== Action ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.555164" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:59.555164" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.555164" level="INFO">Action: Clicked Register Button</msg>
+<msg time="2026-01-02T21:25:59.555164" level="INFO">Action: Clicked Register Button</msg>
 <arg>Action: Clicked Register Button</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.555164" elapsed="0.001504"/>
+<status status="PASS" start="2026-01-02T21:25:59.555164" elapsed="0.001504"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.556668" level="INFO">Status: Form Submitted</msg>
+<msg time="2026-01-02T21:25:59.556668" level="INFO">Status: Form Submitted</msg>
 <arg>Status: Form Submitted</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.556668" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:59.556668" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:25:59.556668" level="INFO">=====================================</msg>
+<msg time="2026-01-02T21:25:59.556668" level="INFO">=====================================</msg>
 <arg>=====================================</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.556668" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:25:59.556668" elapsed="0.000000"/>
 </kw>
 <arg>Empty First Name and Last Name</arg>
 <arg>${EMPTY_VALUE}</arg>
@@ -562,188 +562,188 @@
 <arg>${EMAIL}</arg>
 <arg>${PHONE}</arg>
 <doc>สร้างรายงานสำหรับแต่ละ Test Case</doc>
-<status status="PASS" start="2025-09-15T21:25:59.553163" elapsed="0.003505"/>
+<status status="PASS" start="2026-01-02T21:25:59.553163" elapsed="0.003505"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-15T21:25:59.556668" elapsed="2.079979"/>
+<status status="PASS" start="2026-01-02T21:25:59.556668" elapsed="2.079979"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:25:57.877769" elapsed="3.758878"/>
+<status status="PASS" start="2026-01-02T21:25:57.877769" elapsed="3.758878"/>
 </kw>
 <kw name="Test Empty Email">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:01.640698" level="INFO">=== Test Case 4: Empty Email ===</msg>
+<msg time="2026-01-02T21:26:01.640698" level="INFO">=== Test Case 4: Empty Email ===</msg>
 <arg>=== Test Case 4: Empty Email ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:01.640698" elapsed="0.000995"/>
+<status status="PASS" start="2026-01-02T21:26:01.640698" elapsed="0.000995"/>
 </kw>
 <kw name="Open Registration Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:01.641693" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Registration.html'.</msg>
+<msg time="2026-01-02T21:26:01.641693" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Lab4/Registration.html'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-15T21:26:01.641693" elapsed="1.419425"/>
+<status status="PASS" start="2026-01-02T21:26:01.641693" elapsed="1.419425"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.061118" elapsed="0.041303"/>
+<status status="PASS" start="2026-01-02T21:26:03.061118" elapsed="0.041303"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Event Registration</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.102421" elapsed="0.012922"/>
+<status status="PASS" start="2026-01-02T21:26:03.102421" elapsed="0.012922"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:26:01.641693" elapsed="1.473650"/>
+<status status="PASS" start="2026-01-02T21:26:01.641693" elapsed="1.473650"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:03.115343" level="INFO">Typing text 'Somsri' into text field 'name=firstname'.</msg>
+<msg time="2026-01-02T21:26:03.115343" level="INFO">Typing text 'Somyod' into text field 'name=firstname'.</msg>
 <arg>name=firstname</arg>
 <arg>${FIRST_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.115343" elapsed="0.072735"/>
+<status status="PASS" start="2026-01-02T21:26:03.115343" elapsed="0.072735"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:03.189060" level="INFO">Typing text 'Sodsai' into text field 'name=lastname'.</msg>
+<msg time="2026-01-02T21:26:03.189060" level="INFO">Typing text 'Sodsai' into text field 'name=lastname'.</msg>
 <arg>name=lastname</arg>
 <arg>${LAST_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.189060" elapsed="0.041669"/>
+<status status="PASS" start="2026-01-02T21:26:03.189060" elapsed="0.041669"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:03.231730" level="INFO">Typing text 'CS KKU' into text field 'name=organization'.</msg>
+<msg time="2026-01-02T21:26:03.231730" level="INFO">Typing text 'CS KKU' into text field 'name=organization'.</msg>
 <arg>name=organization</arg>
 <arg>${ORGANIZATION}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.230729" elapsed="0.043057"/>
+<status status="PASS" start="2026-01-02T21:26:03.230729" elapsed="0.043057"/>
 </kw>
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>name=email</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.273786" elapsed="0.018492"/>
+<status status="PASS" start="2026-01-02T21:26:03.273786" elapsed="0.018492"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:03.293278" level="INFO">Typing text '081-001-1234' into text field 'name=phone'.</msg>
+<msg time="2026-01-02T21:26:03.293278" level="INFO">Typing text '091-001-1234' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>${PHONE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.293278" elapsed="0.044422"/>
+<status status="PASS" start="2026-01-02T21:26:03.293278" elapsed="0.044422"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:03.337700" level="INFO">Clicking button 'Register'.</msg>
+<msg time="2026-01-02T21:26:03.337700" level="INFO">Clicking button 'Register'.</msg>
 <arg>Register</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.337700" elapsed="0.041038"/>
+<status status="PASS" start="2026-01-02T21:26:03.337700" elapsed="0.041038"/>
 </kw>
 <kw name="Generate Test Report">
 <kw name="Get Time" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.379795" level="INFO">${current_time} = 2025-09-15 21:26:03</msg>
+<msg time="2026-01-02T21:26:03.379795" level="INFO">${current_time} = 2026-01-02 21:26:03</msg>
 <var>${current_time}</var>
 <doc>Returns the given time in the requested format.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.379795" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:03.379795" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.380301" level="INFO">========== TEST CASE REPORT ==========</msg>
+<msg time="2026-01-02T21:26:03.380301" level="INFO">========== TEST CASE REPORT ==========</msg>
 <arg>========== TEST CASE REPORT ==========</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.380301" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:03.380301" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.380301" level="INFO">Test Case: Empty Email</msg>
+<msg time="2026-01-02T21:26:03.380301" level="INFO">Test Case: Empty Email</msg>
 <arg>Test Case: ${test_case_name}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.380301" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:03.380301" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.380301" level="INFO">URL: http://localhost:7272/Registration.html</msg>
+<msg time="2026-01-02T21:26:03.380301" level="INFO">URL: http://localhost:7272/Lab4/Registration.html</msg>
 <arg>URL: ${URL}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.380301" elapsed="0.000504"/>
+<status status="PASS" start="2026-01-02T21:26:03.380301" elapsed="0.000504"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.380805" level="INFO">Browser: Chrome</msg>
+<msg time="2026-01-02T21:26:03.380805" level="INFO">Browser: Chrome</msg>
 <arg>Browser: ${BROWSER}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.380805" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:03.380805" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.380805" level="INFO">Timestamp: 2025-09-15 21:26:03</msg>
+<msg time="2026-01-02T21:26:03.380805" level="INFO">Timestamp: 2026-01-02 21:26:03</msg>
 <arg>Timestamp: ${current_time}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.380805" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:03.380805" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.380805" level="INFO"> </msg>
+<msg time="2026-01-02T21:26:03.380805" level="INFO"> </msg>
 <arg>${SPACE}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.380805" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:03.380805" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.380805" level="INFO">=== Form Data ===</msg>
+<msg time="2026-01-02T21:26:03.380805" level="INFO">=== Form Data ===</msg>
 <arg>=== Form Data ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.380805" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:03.380805" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.380805" level="INFO">First Name: Somsri</msg>
+<msg time="2026-01-02T21:26:03.380805" level="INFO">First Name: Somyod</msg>
 <arg>First Name: ${firstname}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.380805" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:03.380805" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.380805" level="INFO">Last Name: Sodsai</msg>
+<msg time="2026-01-02T21:26:03.380805" level="INFO">Last Name: Sodsai</msg>
 <arg>Last Name: ${lastname}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.380805" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:03.380805" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.380805" level="INFO">Organization: CS KKU</msg>
+<msg time="2026-01-02T21:26:03.380805" level="INFO">Organization: CS KKU</msg>
 <arg>Organization: ${organization}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.380805" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:03.380805" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.381818" level="INFO">Email: [EMPTY]</msg>
+<msg time="2026-01-02T21:26:03.381818" level="INFO">Email: [EMPTY]</msg>
 <arg>Email: ${email}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.380805" elapsed="0.001013"/>
+<status status="PASS" start="2026-01-02T21:26:03.380805" elapsed="0.001013"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.381818" level="INFO">Phone: 081-001-1234</msg>
+<msg time="2026-01-02T21:26:03.381818" level="INFO">Phone: 091-001-1234</msg>
 <arg>Phone: ${phone}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.381818" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:03.381818" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.381818" level="INFO"> </msg>
+<msg time="2026-01-02T21:26:03.381818" level="INFO"> </msg>
 <arg>${SPACE}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.381818" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:03.381818" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.381818" level="INFO">=== Action ===</msg>
+<msg time="2026-01-02T21:26:03.381818" level="INFO">=== Action ===</msg>
 <arg>=== Action ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.381818" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:03.381818" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.382325" level="INFO">Action: Clicked Register Button</msg>
+<msg time="2026-01-02T21:26:03.382325" level="INFO">Action: Clicked Register Button</msg>
 <arg>Action: Clicked Register Button</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.382325" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:03.382325" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.382325" level="INFO">Status: Form Submitted</msg>
+<msg time="2026-01-02T21:26:03.382325" level="INFO">Status: Form Submitted</msg>
 <arg>Status: Form Submitted</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.382325" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:03.382325" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:03.382325" level="INFO">=====================================</msg>
+<msg time="2026-01-02T21:26:03.382325" level="INFO">=====================================</msg>
 <arg>=====================================</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.382325" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:03.382325" elapsed="0.000000"/>
 </kw>
 <arg>Empty Email</arg>
 <arg>${FIRST_NAME}</arg>
@@ -752,188 +752,188 @@
 <arg>${EMPTY_VALUE}</arg>
 <arg>${PHONE}</arg>
 <doc>สร้างรายงานสำหรับแต่ละ Test Case</doc>
-<status status="PASS" start="2025-09-15T21:26:03.378738" elapsed="0.003587"/>
+<status status="PASS" start="2026-01-02T21:26:03.378738" elapsed="0.003587"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-15T21:26:03.382325" elapsed="2.090798"/>
+<status status="PASS" start="2026-01-02T21:26:03.382325" elapsed="2.090798"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:26:01.638676" elapsed="3.835439"/>
+<status status="PASS" start="2026-01-02T21:26:01.638676" elapsed="3.835439"/>
 </kw>
 <kw name="Test Empty Phone Number">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:05.478648" level="INFO">=== Test Case 5: Empty Phone Number ===</msg>
+<msg time="2026-01-02T21:26:05.478648" level="INFO">=== Test Case 5: Empty Phone Number ===</msg>
 <arg>=== Test Case 5: Empty Phone Number ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:05.477656" elapsed="0.000992"/>
+<status status="PASS" start="2026-01-02T21:26:05.477656" elapsed="0.000992"/>
 </kw>
 <kw name="Open Registration Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:05.481642" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Registration.html'.</msg>
+<msg time="2026-01-02T21:26:05.481642" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Lab4/Registration.html'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-15T21:26:05.480647" elapsed="1.431998"/>
+<status status="PASS" start="2026-01-02T21:26:05.480647" elapsed="1.431998"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-15T21:26:06.912645" elapsed="0.034982"/>
+<status status="PASS" start="2026-01-02T21:26:06.912645" elapsed="0.034982"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Event Registration</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-09-15T21:26:06.947627" elapsed="0.008001"/>
+<status status="PASS" start="2026-01-02T21:26:06.947627" elapsed="0.008001"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:26:05.479650" elapsed="1.475978"/>
+<status status="PASS" start="2026-01-02T21:26:05.479650" elapsed="1.475978"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:06.955628" level="INFO">Typing text 'Somsri' into text field 'name=firstname'.</msg>
+<msg time="2026-01-02T21:26:06.955628" level="INFO">Typing text 'Somyod' into text field 'name=firstname'.</msg>
 <arg>name=firstname</arg>
 <arg>${FIRST_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:06.955628" elapsed="0.058053"/>
+<status status="PASS" start="2026-01-02T21:26:06.955628" elapsed="0.058053"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:07.014681" level="INFO">Typing text 'Sodsai' into text field 'name=lastname'.</msg>
+<msg time="2026-01-02T21:26:07.014681" level="INFO">Typing text 'Sodsai' into text field 'name=lastname'.</msg>
 <arg>name=lastname</arg>
 <arg>${LAST_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.013681" elapsed="0.044736"/>
+<status status="PASS" start="2026-01-02T21:26:07.013681" elapsed="0.044736"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:07.058417" level="INFO">Typing text 'CS KKU' into text field 'name=organization'.</msg>
+<msg time="2026-01-02T21:26:07.058417" level="INFO">Typing text 'CS KKU' into text field 'name=organization'.</msg>
 <arg>name=organization</arg>
 <arg>${ORGANIZATION}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.058417" elapsed="0.046263"/>
+<status status="PASS" start="2026-01-02T21:26:07.058417" elapsed="0.046263"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:07.104680" level="INFO">Typing text 'somsri@kkumail.com' into text field 'name=email'.</msg>
+<msg time="2026-01-02T21:26:07.104680" level="INFO">Typing text 'Somyod@kkumail.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.104680" elapsed="0.052496"/>
+<status status="PASS" start="2026-01-02T21:26:07.104680" elapsed="0.052496"/>
 </kw>
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>name=phone</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.158185" elapsed="0.015530"/>
+<status status="PASS" start="2026-01-02T21:26:07.158185" elapsed="0.015530"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:07.174708" level="INFO">Clicking button 'Register'.</msg>
+<msg time="2026-01-02T21:26:07.174708" level="INFO">Clicking button 'Register'.</msg>
 <arg>Register</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.173715" elapsed="0.039084"/>
+<status status="PASS" start="2026-01-02T21:26:07.173715" elapsed="0.039084"/>
 </kw>
 <kw name="Generate Test Report">
 <kw name="Get Time" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.212799" level="INFO">${current_time} = 2025-09-15 21:26:07</msg>
+<msg time="2026-01-02T21:26:07.212799" level="INFO">${current_time} = 2026-01-02 21:26:07</msg>
 <var>${current_time}</var>
 <doc>Returns the given time in the requested format.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.212799" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.212799" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.212799" level="INFO">========== TEST CASE REPORT ==========</msg>
+<msg time="2026-01-02T21:26:07.212799" level="INFO">========== TEST CASE REPORT ==========</msg>
 <arg>========== TEST CASE REPORT ==========</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.212799" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.212799" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.212799" level="INFO">Test Case: Empty Phone Number</msg>
+<msg time="2026-01-02T21:26:07.212799" level="INFO">Test Case: Empty Phone Number</msg>
 <arg>Test Case: ${test_case_name}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.212799" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.212799" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.212799" level="INFO">URL: http://localhost:7272/Registration.html</msg>
+<msg time="2026-01-02T21:26:07.212799" level="INFO">URL: http://localhost:7272/Lab4/Registration.html</msg>
 <arg>URL: ${URL}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.212799" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.212799" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.214322" level="INFO">Browser: Chrome</msg>
+<msg time="2026-01-02T21:26:07.214322" level="INFO">Browser: Chrome</msg>
 <arg>Browser: ${BROWSER}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.212799" elapsed="0.001523"/>
+<status status="PASS" start="2026-01-02T21:26:07.212799" elapsed="0.001523"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.214322" level="INFO">Timestamp: 2025-09-15 21:26:07</msg>
+<msg time="2026-01-02T21:26:07.214322" level="INFO">Timestamp: 2026-01-02 21:26:07</msg>
 <arg>Timestamp: ${current_time}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.214322" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.214322" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.214322" level="INFO"> </msg>
+<msg time="2026-01-02T21:26:07.214322" level="INFO"> </msg>
 <arg>${SPACE}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.214322" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.214322" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.214322" level="INFO">=== Form Data ===</msg>
+<msg time="2026-01-02T21:26:07.214322" level="INFO">=== Form Data ===</msg>
 <arg>=== Form Data ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.214322" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.214322" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.214322" level="INFO">First Name: Somsri</msg>
+<msg time="2026-01-02T21:26:07.214322" level="INFO">First Name: Somyod</msg>
 <arg>First Name: ${firstname}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.214322" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.214322" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.214322" level="INFO">Last Name: Sodsai</msg>
+<msg time="2026-01-02T21:26:07.214322" level="INFO">Last Name: Sodsai</msg>
 <arg>Last Name: ${lastname}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.214322" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.214322" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.214322" level="INFO">Organization: CS KKU</msg>
+<msg time="2026-01-02T21:26:07.214322" level="INFO">Organization: CS KKU</msg>
 <arg>Organization: ${organization}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.214322" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.214322" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.215336" level="INFO">Email: somsri@kkumail.com</msg>
+<msg time="2026-01-02T21:26:07.215336" level="INFO">Email: Somyod@kkumail.com</msg>
 <arg>Email: ${email}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.215336" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.215336" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.215336" level="INFO">Phone: [EMPTY]</msg>
+<msg time="2026-01-02T21:26:07.215336" level="INFO">Phone: [EMPTY]</msg>
 <arg>Phone: ${phone}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.215336" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.215336" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.215336" level="INFO"> </msg>
+<msg time="2026-01-02T21:26:07.215336" level="INFO"> </msg>
 <arg>${SPACE}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.215336" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.215336" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.215336" level="INFO">=== Action ===</msg>
+<msg time="2026-01-02T21:26:07.215336" level="INFO">=== Action ===</msg>
 <arg>=== Action ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.215336" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.215336" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.215336" level="INFO">Action: Clicked Register Button</msg>
+<msg time="2026-01-02T21:26:07.215336" level="INFO">Action: Clicked Register Button</msg>
 <arg>Action: Clicked Register Button</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.215336" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.215336" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.215336" level="INFO">Status: Form Submitted</msg>
+<msg time="2026-01-02T21:26:07.215336" level="INFO">Status: Form Submitted</msg>
 <arg>Status: Form Submitted</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.215336" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.215336" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:07.215336" level="INFO">=====================================</msg>
+<msg time="2026-01-02T21:26:07.215336" level="INFO">=====================================</msg>
 <arg>=====================================</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.215336" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:07.215336" elapsed="0.000000"/>
 </kw>
 <arg>Empty Phone Number</arg>
 <arg>${FIRST_NAME}</arg>
@@ -942,190 +942,190 @@
 <arg>${EMAIL}</arg>
 <arg>${EMPTY_VALUE}</arg>
 <doc>สร้างรายงานสำหรับแต่ละ Test Case</doc>
-<status status="PASS" start="2025-09-15T21:26:07.212799" elapsed="0.002537"/>
+<status status="PASS" start="2026-01-02T21:26:07.212799" elapsed="0.002537"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-15T21:26:07.216343" elapsed="2.090819"/>
+<status status="PASS" start="2026-01-02T21:26:07.216343" elapsed="2.090819"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:26:05.475114" elapsed="3.832048"/>
+<status status="PASS" start="2026-01-02T21:26:05.475114" elapsed="3.832048"/>
 </kw>
 <kw name="Test Invalid Phone Number">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:09.310203" level="INFO">=== Test Case 6: Invalid Phone Number ===</msg>
+<msg time="2026-01-02T21:26:09.310203" level="INFO">=== Test Case 6: Invalid Phone Number ===</msg>
 <arg>=== Test Case 6: Invalid Phone Number ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:09.310203" elapsed="0.001002"/>
+<status status="PASS" start="2026-01-02T21:26:09.310203" elapsed="0.001002"/>
 </kw>
 <kw name="Open Registration Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:09.313201" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Registration.html'.</msg>
+<msg time="2026-01-02T21:26:09.313201" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Lab4/Registration.html'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-15T21:26:09.313201" elapsed="1.381643"/>
+<status status="PASS" start="2026-01-02T21:26:09.313201" elapsed="1.381643"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-15T21:26:10.694844" elapsed="0.032909"/>
+<status status="PASS" start="2026-01-02T21:26:10.694844" elapsed="0.032909"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Event Registration</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-09-15T21:26:10.728755" elapsed="0.007781"/>
+<status status="PASS" start="2026-01-02T21:26:10.728755" elapsed="0.007781"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:26:09.311205" elapsed="1.425331"/>
+<status status="PASS" start="2026-01-02T21:26:09.311205" elapsed="1.425331"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:10.737543" level="INFO">Typing text 'Somsri' into text field 'name=firstname'.</msg>
+<msg time="2026-01-02T21:26:10.737543" level="INFO">Typing text 'Somyod' into text field 'name=firstname'.</msg>
 <arg>name=firstname</arg>
 <arg>${FIRST_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:10.737543" elapsed="0.057875"/>
+<status status="PASS" start="2026-01-02T21:26:10.737543" elapsed="0.057875"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:10.795418" level="INFO">Typing text 'Sodsai' into text field 'name=lastname'.</msg>
+<msg time="2026-01-02T21:26:10.795418" level="INFO">Typing text 'Sodsai' into text field 'name=lastname'.</msg>
 <arg>name=lastname</arg>
 <arg>${LAST_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:10.795418" elapsed="0.041178"/>
+<status status="PASS" start="2026-01-02T21:26:10.795418" elapsed="0.041178"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:10.836596" level="INFO">Typing text 'CS KKU' into text field 'name=organization'.</msg>
+<msg time="2026-01-02T21:26:10.836596" level="INFO">Typing text 'CS KKU' into text field 'name=organization'.</msg>
 <arg>name=organization</arg>
 <arg>${ORGANIZATION}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:10.836596" elapsed="0.040990"/>
+<status status="PASS" start="2026-01-02T21:26:10.836596" elapsed="0.040990"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:10.877586" level="INFO">Typing text 'somsri@kkumail.com' into text field 'name=email'.</msg>
+<msg time="2026-01-02T21:26:10.877586" level="INFO">Typing text 'Somyod@kkumail.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:10.877586" elapsed="0.053825"/>
+<status status="PASS" start="2026-01-02T21:26:10.877586" elapsed="0.053825"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:10.931411" level="INFO">Typing text '1234' into text field 'name=phone'.</msg>
+<msg time="2026-01-02T21:26:10.931411" level="INFO">Typing text '1234' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>${INVALID_PHONE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:10.931411" elapsed="0.038909"/>
+<status status="PASS" start="2026-01-02T21:26:10.931411" elapsed="0.038909"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:26:10.970320" level="INFO">Clicking button 'Register'.</msg>
+<msg time="2026-01-02T21:26:10.970320" level="INFO">Clicking button 'Register'.</msg>
 <arg>Register</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:26:10.970320" elapsed="0.040468"/>
+<status status="PASS" start="2026-01-02T21:26:10.970320" elapsed="0.040468"/>
 </kw>
 <kw name="Generate Test Report">
 <kw name="Get Time" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.012215" level="INFO">${current_time} = 2025-09-15 21:26:11</msg>
+<msg time="2026-01-02T21:26:11.012215" level="INFO">${current_time} = 2026-01-02 21:26:11</msg>
 <var>${current_time}</var>
 <doc>Returns the given time in the requested format.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.012215" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.012215" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.012215" level="INFO">========== TEST CASE REPORT ==========</msg>
+<msg time="2026-01-02T21:26:11.012215" level="INFO">========== TEST CASE REPORT ==========</msg>
 <arg>========== TEST CASE REPORT ==========</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.012215" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.012215" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.012215" level="INFO">Test Case: Invalid Phone Number</msg>
+<msg time="2026-01-02T21:26:11.012215" level="INFO">Test Case: Invalid Phone Number</msg>
 <arg>Test Case: ${test_case_name}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.012215" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.012215" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.012215" level="INFO">URL: http://localhost:7272/Registration.html</msg>
+<msg time="2026-01-02T21:26:11.012215" level="INFO">URL: http://localhost:7272/Lab4/Registration.html</msg>
 <arg>URL: ${URL}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.012215" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.012215" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.012215" level="INFO">Browser: Chrome</msg>
+<msg time="2026-01-02T21:26:11.012215" level="INFO">Browser: Chrome</msg>
 <arg>Browser: ${BROWSER}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.012215" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.012215" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.012215" level="INFO">Timestamp: 2025-09-15 21:26:11</msg>
+<msg time="2026-01-02T21:26:11.012215" level="INFO">Timestamp: 2026-01-02 21:26:11</msg>
 <arg>Timestamp: ${current_time}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.012215" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.012215" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.013220" level="INFO"> </msg>
+<msg time="2026-01-02T21:26:11.013220" level="INFO"> </msg>
 <arg>${SPACE}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.013220" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.013220" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.013220" level="INFO">=== Form Data ===</msg>
+<msg time="2026-01-02T21:26:11.013220" level="INFO">=== Form Data ===</msg>
 <arg>=== Form Data ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.013220" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.013220" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.013220" level="INFO">First Name: Somsri</msg>
+<msg time="2026-01-02T21:26:11.013220" level="INFO">First Name: Somyod</msg>
 <arg>First Name: ${firstname}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.013220" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.013220" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.013220" level="INFO">Last Name: Sodsai</msg>
+<msg time="2026-01-02T21:26:11.013220" level="INFO">Last Name: Sodsai</msg>
 <arg>Last Name: ${lastname}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.013220" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.013220" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.013220" level="INFO">Organization: CS KKU</msg>
+<msg time="2026-01-02T21:26:11.013220" level="INFO">Organization: CS KKU</msg>
 <arg>Organization: ${organization}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.013220" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.013220" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.013220" level="INFO">Email: somsri@kkumail.com</msg>
+<msg time="2026-01-02T21:26:11.013220" level="INFO">Email: Somyod@kkumail.com</msg>
 <arg>Email: ${email}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.013220" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.013220" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.013220" level="INFO">Phone: 1234</msg>
+<msg time="2026-01-02T21:26:11.013220" level="INFO">Phone: 1234</msg>
 <arg>Phone: ${phone}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.013220" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.013220" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.014225" level="INFO"> </msg>
+<msg time="2026-01-02T21:26:11.014225" level="INFO"> </msg>
 <arg>${SPACE}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.014225" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.014225" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.014225" level="INFO">=== Action ===</msg>
+<msg time="2026-01-02T21:26:11.014225" level="INFO">=== Action ===</msg>
 <arg>=== Action ===</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.014225" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.014225" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.014225" level="INFO">Action: Clicked Register Button</msg>
+<msg time="2026-01-02T21:26:11.014225" level="INFO">Action: Clicked Register Button</msg>
 <arg>Action: Clicked Register Button</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.014225" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.014225" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.014225" level="INFO">Status: Form Submitted</msg>
+<msg time="2026-01-02T21:26:11.014225" level="INFO">Status: Form Submitted</msg>
 <arg>Status: Form Submitted</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.014225" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.014225" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:26:11.014225" level="INFO">=====================================</msg>
+<msg time="2026-01-02T21:26:11.014225" level="INFO">=====================================</msg>
 <arg>=====================================</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.014225" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:26:11.014225" elapsed="0.000000"/>
 </kw>
 <arg>Invalid Phone Number</arg>
 <arg>${FIRST_NAME}</arg>
@@ -1134,17 +1134,17 @@
 <arg>${EMAIL}</arg>
 <arg>${INVALID_PHONE}</arg>
 <doc>สร้างรายงานสำหรับแต่ละ Test Case</doc>
-<status status="PASS" start="2025-09-15T21:26:11.010788" elapsed="0.003437"/>
+<status status="PASS" start="2026-01-02T21:26:11.010788" elapsed="0.003437"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-15T21:26:11.014225" elapsed="2.081593"/>
+<status status="PASS" start="2026-01-02T21:26:11.014225" elapsed="2.081593"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:26:09.309208" elapsed="3.787611"/>
+<status status="PASS" start="2026-01-02T21:26:09.309208" elapsed="3.787611"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:25:50.288413" elapsed="22.808936"/>
+<status status="PASS" start="2026-01-02T21:25:50.288413" elapsed="22.808936"/>
 </test>
-<status status="PASS" start="2025-09-15T21:25:50.143196" elapsed="22.958180"/>
+<status status="PASS" start="2026-01-02T21:25:50.143196" elapsed="22.958180"/>
 </suite>
 <statistics>
 <total>
