@@ -1,167 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.11.9 on win32)" generated="2025-09-15T21:14:40.060334" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.11.9 on win32)" generated="2026-01-02T21:14:40.060334" rpa="false" schemaversion="5">
 <suite id="s1" name="Event Registration No Organization" source="D:\SQA\Lab10\Starterfiles\Starterfiles\Test\Login_success\event_registration_no_organization.robot">
 <test id="s1-t1" name="Open Event Registration Page" line="13">
 <kw name="Open Registration Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:14:40.209837" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Registration.html'.</msg>
+<msg time="2026-01-02T21:14:40.209837" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Registration.html'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-15T21:14:40.209837" elapsed="1.407107"/>
+<status status="PASS" start="2026-01-02T21:14:40.209837" elapsed="1.407107"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-15T21:14:41.617945" elapsed="0.024527"/>
+<status status="PASS" start="2026-01-02T21:14:41.617945" elapsed="0.024527"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Event Registration</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-09-15T21:14:41.642472" elapsed="0.012021"/>
+<status status="PASS" start="2026-01-02T21:14:41.642472" elapsed="0.012021"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:14:40.208332" elapsed="1.446161"/>
+<status status="PASS" start="2026-01-02T21:14:40.208332" elapsed="1.446161"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:14:40.208332" elapsed="1.446161"/>
+<status status="PASS" start="2026-01-02T21:14:40.208332" elapsed="1.446161"/>
 </test>
 <test id="s1-t2" name="Register Success No Organization Info" line="16">
 <kw name="Open Registration Page" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:14:41.655997" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Registration.html'.</msg>
+<msg time="2026-01-02T21:14:41.655997" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/Registration.html'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-15T21:14:41.655997" elapsed="1.381370"/>
+<status status="PASS" start="2026-01-02T21:14:41.655997" elapsed="1.381370"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.037367" elapsed="0.031552"/>
+<status status="PASS" start="2026-01-02T21:14:43.037367" elapsed="0.031552"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Event Registration</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.068919" elapsed="0.008075"/>
+<status status="PASS" start="2026-01-02T21:14:43.068919" elapsed="0.008075"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:14:41.655997" elapsed="1.420997"/>
+<status status="PASS" start="2026-01-02T21:14:41.655997" elapsed="1.420997"/>
 </kw>
 <kw name="Fill Registration Form Without Organization">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:14:43.077996" level="INFO">Typing text 'Somsri' into text field 'name=firstname'.</msg>
+<msg time="2026-01-02T21:14:43.077996" level="INFO">Typing text 'Somyod' into text field 'name=firstname'.</msg>
 <arg>name=firstname</arg>
 <arg>${FIRST_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.077996" elapsed="0.057210"/>
+<status status="PASS" start="2026-01-02T21:14:43.077996" elapsed="0.057210"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:14:43.135206" level="INFO">Typing text 'Sodsai' into text field 'name=lastname'.</msg>
+<msg time="2026-01-02T21:14:43.135206" level="INFO">Typing text 'Sodsai' into text field 'name=lastname'.</msg>
 <arg>name=lastname</arg>
 <arg>${LAST_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.135206" elapsed="0.054328"/>
+<status status="PASS" start="2026-01-02T21:14:43.135206" elapsed="0.054328"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:14:43.190534" level="INFO">Typing text 'somsri@kkumail.com' into text field 'name=email'.</msg>
+<msg time="2026-01-02T21:14:43.190534" level="INFO">Typing text 'Somyod@kkumail.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.190534" elapsed="0.069694"/>
+<status status="PASS" start="2026-01-02T21:14:43.190534" elapsed="0.069694"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:14:43.261227" level="INFO">Typing text '081-001-1234' into text field 'name=phone'.</msg>
+<msg time="2026-01-02T21:14:43.261227" level="INFO">Typing text '091-001-1234' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>${PHONE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.260228" elapsed="0.047666"/>
+<status status="PASS" start="2026-01-02T21:14:43.260228" elapsed="0.047666"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:14:43.077996" elapsed="0.229898"/>
+<status status="PASS" start="2026-01-02T21:14:43.077996" elapsed="0.229898"/>
 </kw>
 <kw name="Submit Registration Form">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-09-15T21:14:43.308894" level="INFO">Clicking button 'Register'.</msg>
+<msg time="2026-01-02T21:14:43.308894" level="INFO">Clicking button 'Register'.</msg>
 <arg>Register</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.308894" elapsed="0.067338"/>
+<status status="PASS" start="2026-01-02T21:14:43.308894" elapsed="0.067338"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:14:43.376232" level="INFO">Registration form submitted</msg>
+<msg time="2026-01-02T21:14:43.376232" level="INFO">Registration form submitted</msg>
 <arg>Registration form submitted</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.376232" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:14:43.376232" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:14:43.307894" elapsed="0.068338"/>
+<status status="PASS" start="2026-01-02T21:14:43.307894" elapsed="0.068338"/>
 </kw>
 <kw name="Generate Registration Report">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:14:43.377236" level="INFO">========== REGISTRATION REPORT ==========</msg>
+<msg time="2026-01-02T21:14:43.377236" level="INFO">========== REGISTRATION REPORT ==========</msg>
 <arg>========== REGISTRATION REPORT ==========</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.377236" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:14:43.377236" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:14:43.377236" level="INFO">Registration Type: No Organization Info</msg>
+<msg time="2026-01-02T21:14:43.377236" level="INFO">Registration Type: No Organization Info</msg>
 <arg>Registration Type: No Organization Info</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.377236" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:14:43.377236" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:14:43.377236" level="INFO">First Name: Somsri</msg>
+<msg time="2026-01-02T21:14:43.377236" level="INFO">First Name: Somyod</msg>
 <arg>First Name: ${FIRST_NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.377236" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:14:43.377236" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:14:43.378236" level="INFO">Last Name: Sodsai</msg>
+<msg time="2026-01-02T21:14:43.378236" level="INFO">Last Name: Sodsai</msg>
 <arg>Last Name: ${LAST_NAME}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.377236" elapsed="0.001000"/>
+<status status="PASS" start="2026-01-02T21:14:43.377236" elapsed="0.001000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:14:43.378236" level="INFO">Organization: [NOT PROVIDED]</msg>
+<msg time="2026-01-02T21:14:43.378236" level="INFO">Organization: [NOT PROVIDED]</msg>
 <arg>Organization: [NOT PROVIDED]</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.378236" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:14:43.378236" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:14:43.378236" level="INFO">Email: somsri@kkumail.com</msg>
+<msg time="2026-01-02T21:14:43.378236" level="INFO">Email: Somyod@kkumail.com</msg>
 <arg>Email: ${EMAIL}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.378236" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:14:43.378236" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:14:43.378236" level="INFO">Phone: 081-001-1234</msg>
+<msg time="2026-01-02T21:14:43.378236" level="INFO">Phone: 091-001-1234</msg>
 <arg>Phone: ${PHONE}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.378236" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:14:43.378236" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:14:43.378236" level="INFO">Registration Status: SUCCESS</msg>
+<msg time="2026-01-02T21:14:43.378236" level="INFO">Registration Status: SUCCESS</msg>
 <arg>Registration Status: SUCCESS</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.378236" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:14:43.378236" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:14:43.378236" level="INFO">Note: Registration successful without organization information</msg>
+<msg time="2026-01-02T21:14:43.378236" level="INFO">Note: Registration successful without organization information</msg>
 <arg>Note: Registration successful without organization information</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.378236" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:14:43.378236" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-09-15T21:14:43.378236" level="INFO">==========================================</msg>
+<msg time="2026-01-02T21:14:43.378236" level="INFO">==========================================</msg>
 <arg>==========================================</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.378236" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-02T21:14:43.378236" elapsed="0.000000"/>
 </kw>
 <doc>สร้างรายงานการลงทะเบียน</doc>
-<status status="PASS" start="2025-09-15T21:14:43.377236" elapsed="0.002000"/>
+<status status="PASS" start="2026-01-02T21:14:43.377236" elapsed="0.002000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-15T21:14:43.379236" elapsed="2.086162"/>
+<status status="PASS" start="2026-01-02T21:14:43.379236" elapsed="2.086162"/>
 </kw>
-<status status="PASS" start="2025-09-15T21:14:41.655997" elapsed="3.810413"/>
+<status status="PASS" start="2026-01-02T21:14:41.655997" elapsed="3.810413"/>
 </test>
-<status status="PASS" start="2025-09-15T21:14:40.061331" elapsed="5.409394"/>
+<status status="PASS" start="2026-01-02T21:14:40.061331" elapsed="5.409394"/>
 </suite>
 <statistics>
 <total>
